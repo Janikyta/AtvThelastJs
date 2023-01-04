@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <h3>Crie um formulário onde deverá ter os campos nome, nome do pai e nome da mãe e um botão de enviar, ao clicar uma função deve ser ativa, e os dados devem ser recebidos, através do console.log exiba os dados dos campos em caixa alta.
+    </h3>
+    <form>
+        <label> Digite seu nome:<br><input type="text" id="nome"></label> <br><br>
+        <label> Digite o nome do seu pai:<br><input type="text" id="pai"></label> <br><br>
+        <label> Digite o nome da sua mãe:<br><input type="text" id="mae"></label> <br><br>
+    </form>
+    <button onclick="nomesCaixaAlta()">Enviar</button><br><br>
+<hr>
+
+    
+    <h3>Crie uma div vazia, e aplique configurações de css, para cor de fundo, largura e altura para que essa div fique quadrada. Abaixo da div,
+     crie 3 botões chamados, círculo, quadrado e retângulo. Ao clicar em cada um dos botões devem ser ativadas funções diferentes:
+    círculo - a função deverá alterar as características de css da div para que a div fique no formato de círculo e com uma nova cor, procure propriedade do css que manipule a borda para isso.
+    quadrado - a função deverá alterar as características de css da div para que fique em um formato quadrado, diferente da inicial.
+    retângulo a função deverá alterar as características de css da div para que fique em um formato de retângulo e com uma nova cor.
+    </h3>
+    <div>
+    
+
+    <button onclick="circulo()">Círculo</button>
+    <button onclick="quadrado()">Quadrado</button>
+    
+    <button onclick="retangulo()">Retângulo</button>
+
+    <div id="questao2">
+    
+
+
+        
+    </div><br><br>
+    <hr>
+
+            <h3>Crie um formulário que possua os campos de marca, modelo, ano, cor, preço e status(select) com as opções: vendido, a venda, em negociação. ao clicar no botão de enviar, uma função deverá ser executada, onde ela deverá receber os dados do formulário, criar um object array com esses dados e mostrar via console o object criado.</h3>
+            <form action="">
+            <input type="text" id="marca" name="marca"  placeholder="Marca"><br><br>
+            <input type="text" id="modelo" name="modelo"  placeholder="Modelo"><br><br>
+            <input type="text" id="ano" name="ano"  placeholder="Ano"><br><br>
+            <input type="text" id="cor" name="cor"  placeholder="Cor"><br><br>
+            <input type="text" id="preco" name="preco"  placeholder="Preço"><br><br>
+            <select name="status"><br><br>
+            <option value="1" selected>Em Negociação</option><br><br>
+            <option value="2">A Venda</option>
+            <option value="3">Vendido</option>
+            </select><br><br>
+          
+        
+            <input type="button" value="Enviar" onclick="pega(this.form)">
+            </form>
+            <br><br>
+
+            <hr>
+            <h3>Crie um formulário que possua um campo de número e um botão ao clicar no botão receber o valor lido e dependendo do valor introduzido mostra uma mensagem diferente: 
+                Entre 0 e 10, 10 excluído, mostra “Insuficiente”
+                Entre 10 e 14, 14 excluído, mostra “Bom”
+                Maior que 14, mostra “Muito Bom”
+                </h3>
+
+            <form>
+            <label>Digite um número: </label><br><br>
+            <input type="number" id="numero" name="numero"><br><br>
+            <input type="button" value="Enviar" onclick="enviarNumero(this.form)"><br><br>
+            </form>
+            <br><br>
+            <hr>
+
+            <h3>Crie um formulário que receba o peso e a altura realize o cálculo do imc ao clicar no botão, exibe uma mensagem de acordo com o resultado:<br>
+                MENOR QUE 18,5	MAGREZA	<br>
+                ENTRE 18,5 E 24,9	NORMAL	<br>
+                ENTRE 25,0 E 29,9	SOBREPESO	<br>
+                ENTRE 30,0 E 39,9	OBESIDADE	<br>
+                MAIOR QUE 40,0	OBESIDADE GRAVE</h3><br>
+
+                <form>
+                        <label>Informe seu peso: </label><br><br>
+                        <input type="number" id="peso" name="peso"><br><br>
+                        <label>Informe sua altura: </label><br><br>
+                        <input type="number" id="altura" name="altura"><br><br>
+                        <input type="button" value=" clique" onclick="pesoAltura(this.form)"><br><br>
+                </form>
+                <br><br>
+                <hr>
+
+
+             <h3>
+            Faça um script que faça 5 perguntas para uma pessoa sobre um crime. As perguntas são:<br><br>
+            "Telefonou para a vítima?"<br><br>
+            "Esteve no local do crime?"<br><br>
+            "Mora perto da vítima?"<br><br>
+            "Devia para a vítima?"<br><br>
+            "Já trabalhou com a vítima?"<br><br>          
+            O script deve no final emitir uma classificação sobre a participação da pessoa no crime. Se a pessoa responder positivamente a 2 questões ela deve ser classificada como "Suspeita", entre 3 e 4 como "Cúmplice" e 5 como "Assassino". Caso contrário, ele será classificado como "Inocente".<br><br>
+             </h3>   
+
+
+        <form>
+            <label>Telefonou para a vítima</label>
+            <select name="telefonou" id="telefonou"><br><br>
+            <option value="0" selected>Não</option><br><br>
+            <option value="1">Sim</option>
+            </select><br><br>
+
+            <label>Esteve no local do crime?</label>
+            <select name="esteve"><br><br>
+            <option value="0" selected>Não</option><br><br>
+            <option value="1">Sim</option>
+            </select><br><br>
+
+            <label>Mora perto da vítima?</label>
+            <select name="mora"><br><br>
+            <option value="0" selected>Não</option><br><br>
+            <option value="1">Sim</option>
+             </select><br><br>
+
+            <label>Devia para a vítima?</label>
+            <select name="devia"><br><br>
+            <option value="0" selected>Não</option><br><br>
+            <option value="1">Sim</option>
+            </select><br><br>
+
+            <label>Já trabalhou com a vítima?</label>
+            <select name="trabalhou"><br><br>
+            <option value="0" selected>Não</option><br><br>
+            <option value="1">Sim</option>
+            </select><br><br>
+         
+            <input type="button" value="Enviar" onclick="julgamento(this.form)"><br><br>
+            
+        </form>
+
+        <div id="conclusao">
+
+        </div>
+
+
+
+
+
+</body>
+
+
+</html>
